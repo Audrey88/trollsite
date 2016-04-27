@@ -1,0 +1,128 @@
+@keyframes animatedBackground {
+    from { background-position: 0 -300%; }
+    to { background-position: 0 300%; }
+}
+
+
+#animate-area	{
+
+    background-image: url(troll.jpg);
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    background-color: black;
+
+    animation: animatedBackground 5s linear infinite;
+}
+
+#cont {
+    margin: 0 auto;
+    width: 800px;
+}
+
+html{
+
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #111;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+    ul.topnav li:not(:first-child) {display: none;}
+    ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {position: relative;}
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+
+p {
+    color: white;
+    text-shadow:
+            -1px -1px 0 #817676,
+            1px -1px 0 #817676,
+            -1px 1px 0 #817676,
+            1px 1px 0 #817676;
+}
+
+div#troll {
+
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: auto;
+
+}
+
+div#troll figure{
+    position: relative;
+    width: 800%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+    animation: 10s slidy infinite;
+}
+
+div#troll figure img {
+
+    height: auto;
+    float:left;
+    display: inline-block;
+}
+
+@keyframes slidy {
+    0% {left: 0%;}
+    20% {left: 0%;}
+    25% {left: 0%; }
+    45% {left: -50%; }
+    50% {left: 0%; }
+    70% {left: 0%; }
+    75% {left: -300%; }
+    95% {left: -300%; }
+    100% {left: -400%; }
+}
+img {
+    width: 300px;
+    height: 300px;
+}
